@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 34px;
+    border-radius: 2px;
+    color: black;
+}
+
+button:active {
+    transform: scale(.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.calculator {
+    padding: 35px 15px 25px 15px;
+    background-color: #717477;
+    border-radius: 10px;
+}
+
+.display {
+    width: 403px;
+    height: 140px;
+    background-color: #cccccc;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.calculation {
+    font-size: 24px;
+}
+
+.number {
+    font-size: 74px;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    gap: 1px;
+}
+
+.btn-num, .btn-sign {
+    background-color: #e7e7e7;
+}
+.btn-operator, .btn-other {
+    background-color: #cccccc;
+}
+
+.plus-minus {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.clear-all {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.clear {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.divide {
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+
+.seven {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.eight {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.nine {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+.multiply {
+    grid-row-start: 2;
+    grid-column-start: 4;
+}
+
+.four {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.five {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.six {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+.minus {
+    grid-row-start: 3;
+    grid-column-start: 4;
+}
+
+.one {
+    grid-row-start: 4;
+    grid-column-start: 1;
+}
+
+.two {
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+.three {
+    grid-row-start: 4;
+    grid-column-start: 3;
+}
+
+.plus {
+    grid-row-start: 4;
+    grid-column-start: 4;
+}
+
+.dot {
+    grid-row-start: 5;
+    grid-column-start: 1;
+}
+
+.zero {
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
+
+.equal {
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 201px;
+    background-color: #FF7700;
+}
